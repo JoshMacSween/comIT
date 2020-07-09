@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <main title="Create User">
+    <hr>
+    <form action="create-user.html" method="GET">
+      <label for="email">Email: </label>
+      <input type="email" name="email" placeholder="Email" required="true"> <br><br>
+      <label for="username">Username: </label>
+      <input type="text" name="username" placeholder="Username" size="30" maxlength="12"><br><br>
+      <label for="password">Password: </label>
+      <input type="password" name="password" placeholder="Password" required="true" size="30" maxlength="8"><br> <br>
+      <label for="bio">Bio:</label><br>
+      <textarea placeholder="give a brief description of this user" name="bio" cols="30" rows="8"></textarea>
+      <br><br>
+      <fieldset>
+        <legend>Interests</legend>
+        <p>Who's your favorite super hero</p>
+        <ol>
+          <li><input type="radio" name="hero" value="Superman">Superman</li>
+          <li><input type="radio" name="hero" value="Batman">Batman</li>
+          <li><input type="radio" name="hero" value="Wonder Woman" checked>Wonder Woman</li>
+          <li><input type="radio" name="hero" value="Flash">Flash</li>
+          <li><input type="radio" name="hero" value="Thor">Thor</li>
+          <li><input type="radio" name="hero" value="Hulk">Hulk</li>
+        </ol>
+        <p>Select your favourite video game</p>
+        <ol>
+          <li><input type="checkbox" name="videgames" value="Fifa" checked>Fifa</li>
+          <li><input type="checkbox" name="videgames" value="NHL">NHL</li>
+          <li><input type="checkbox" name="videgames" value="Resident Evil">Resident Evil</li>
+          <li><input type="checkbox" name="videgames" value="Uncharted" checked>Uncharted</li>
+          <input type="hidden" name="userid" value="2300"> <br>
+          <button type="submit">Create User</button>
+        </ol>
+      </fieldset>
+    </form>
+  </main>
+</body>
+</html>
